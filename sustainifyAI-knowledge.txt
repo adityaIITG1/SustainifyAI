@@ -1,0 +1,27 @@
+Icon
+Data Type,Source API / Simulation,Key Purpose in App
+Historical Climate Data,Open-Meteo ERA5 Reanalysis (Public),"Provides daily values for Temperature, Precipitation, Wind Speed, and Solar Radiation."
+Real-time Air Quality,Open-Meteo Air Quality (Public),"Provides latest hourly readings for pollutants like PM2.5, PM10, CO, NO₂, O₃."
+Governance/Waste/Green,Simulated/Proxy Data (based on urban Indian trends),"Data for MSW TPD, Swachh Ranks, EV adoption, and tree inventory are simulated for demonstration purposes."Metric,Unit / Scale,Desired Direction,Contextual Thresholds / Rules
+PM2.5,μg/m3,LOWER (Clean Air),Good <50; Bad >90. Critical alert trigger is configurable around 90.
+Total MSW (Tons Per Day),TPD (Tons/Day),LOWER (Less Waste),High Stress is defined as MSW TPD above 1000 (proxy). Trend forecast shows expected change (↑ or ↓).
+Pollution Rank,Rank # (Lower number is better),LOWER (Better Quality),Goal is Top 30 nationally. Rank is calculated dynamically based on live PM2.5 readings compared to other municipal corps.
+Mean Temperature,∘C (Daily Average),Neutral (or Lower),Temperatures >25∘C are used as a proxy for crop yield stress in simulations (Impact Story).
+MAE,Same Unit as Target,LOWER (Higher Accuracy),"Measures the average magnitude of error in a forecast (e.g., 2.5∘C)."
+MAPE,Percentage (%),LOWER (Higher Accuracy),"Measures the average error as a percentage (e.g., 10%)."
+Feature / Tab,Definition and Context
+Sustainability Score,"A composite index (0-100) calculated from five weighted inputs (Air Quality, CO₂/Capita, Renewables, Water Quality, Recycling). Higher score is better."
+Score Weights,"Air Quality (28%), Renewables (24%), CO₂/Capita (18%), Water Quality (15%), Recycling Rate (15%)."
+Forecasting Models,"The tab allows users to select Prophet (for seasonality), ARIMA (classical time-series), or Random Forest (ML ensemble)."
+Seasonality Anomaly Tracker,A visualization (Overview Tab) showing the Year-over-Year (YoY) Change in Temperature and Precipitation. Spikes far from the baseline (zero line) indicate abnormal weather events.
+River Health,"Assessed by BOD (Biochemical Oxygen Demand, pollution load) and DO (Dissolved Oxygen). Good Health requires Low BOD and High DO."
+4R Model (Waste),The strategic waste management hierarchy: Reduce → Reuse → Recycle → Recover (energy).
+Afforestation Goal,Tracks trees needed versus current inventory to meet the standard of 10 trees per person.
+Feature / Tab,Definition and Context
+Sustainability Score,"A composite index (0-100) calculated from five weighted inputs (Air Quality, CO₂/Capita, Renewables, Water Quality, Recycling). Higher score is better."
+Score Weights,"Air Quality (28%), Renewables (24%), CO₂/Capita (18%), Water Quality (15%), Recycling Rate (15%)."
+Forecasting Models,"The tab allows users to select Prophet (for seasonality), ARIMA (classical time-series), or Random Forest (ML ensemble)."
+Seasonality Anomaly Tracker,A visualization (Overview Tab) showing the Year-over-Year (YoY) Change in Temperature and Precipitation. Spikes far from the baseline (zero line) indicate abnormal weather events.
+River Health,"Assessed by BOD (Biochemical Oxygen Demand, pollution load) and DO (Dissolved Oxygen). Good Health requires Low BOD and High DO."
+4R Model (Waste),The strategic waste management hierarchy: Reduce → Reuse → Recycle → Recover (energy).
+Afforestation Goal,Tracks trees needed versus current inventory to meet the standard of 10 trees per person.
